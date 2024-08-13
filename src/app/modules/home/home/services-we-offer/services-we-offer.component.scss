@@ -1,0 +1,10 @@
+.zoom-image {
+  display: block; /* Ensures no extra space around the image */
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center; /* Zooms in from the center of the image */
+}
+
+.zoom-image:hover {
+  transform: scaleX(1.05); /* Adjust scale as needed */
+  overflow: hidden;
+}

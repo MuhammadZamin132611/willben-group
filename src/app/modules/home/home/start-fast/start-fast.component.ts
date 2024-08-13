@@ -10,9 +10,6 @@ import { Component, OnInit } from '@angular/core';
 export class StartFastComponent implements OnInit {
 
   ngOnInit(): void {
-    // for(let i=0;i<1000000000;i++) {
-		// 	console.log(i); 
-		// }
   }
 
 }
