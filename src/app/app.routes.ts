@@ -9,6 +9,7 @@ import { MostPopularComponent } from './modules/blogs/most-popular/most-popular.
 import { PortfolioComponent } from './modules/company/portfolio/portfolio.component';
 import { AboutUsComponent } from './modules/company/about-us/about-us.component';
 import { SoftwareProductDevelopmentComponent } from './modules/services/software-product-development/software-product-development.component';
+import { CustomerSoftwareDevelopmentComponent } from './modules/services/customer-software-development/customer-software-development.component';
 
 export const routes: Routes = [
     {path:'',component:HomeComponent},
@@ -21,5 +22,6 @@ export const routes: Routes = [
     {path:'portfolio',component:PortfolioComponent},
     {path:'about_us',component:AboutUsComponent},
     {path:'softwareproduct',component:SoftwareProductDevelopmentComponent},
+    {path:'customer-software-developmen',component:CustomerSoftwareDevelopmentComponent},
     {path:'**',component:HomeComponent},
 ];
