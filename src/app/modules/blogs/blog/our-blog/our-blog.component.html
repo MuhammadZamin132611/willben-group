@@ -1,13 +1,40 @@
 <div class="bg-[#F8F8F8] md:px-20 md:py-16 p-5">
     <p class="md:text-4xl text-2xl font-normal text-center text-[#0B2E58]">Our Blogs</p>
-    <div class="grid md:grid-cols-3 lg:grid-cols-3 gap-5 pt-5">
-        <div class="shadow cursor-pointer" routerLink="">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 pt-5">
+        <div class="shadow cursor-pointer" routerLink="/benifit">
             <div>
                 <img src="../../../../../assets/benefit.webp" alt="benefit">
             </div>
             <div class="p-5">
-                <p class="underline text-2xl font-normal">Benefits of implementing APIs in a Business</p>
-                <p class="text-base font-normal">In today's dynamic digital commerce landscape, Application Programming Interfaces (APIs) have emerged..</p>
+                <p class="underline text-2xl font-normal">{{firstPara}}</p>
+                <p class="text-base font-normal">{{secondPara}}</p>
+            </div>
+        </div>
+        <div class="shadow cursor-pointer" routerLink="/most-popular">
+            <div>
+                <img src="../../../../../assets/popular.webp" alt="benefit">
+            </div>
+            <div class="p-5">
+                <p class="underline text-2xl font-normal">{{thirdPara}}</p>
+                <p class="text-base font-normal">{{fourthPara}}</p>
+            </div>
+        </div>
+        <div class="shadow cursor-pointer" routerLink="/react-popular">
+            <div>
+                <img src="../../../../../assets/react.webp" alt="benefit">
+            </div>
+            <div class="p-5">
+                <p class="underline text-2xl font-normal">{{fifthPara}}</p>
+                <p class="text-base font-normal">{{sixPara}}</p>
+            </div>
+        </div>
+        <div class="shadow cursor-pointer" routerLink="/java-future">
+            <div>
+                <img src="../../../../../assets/java.webp" alt="benefit">
+            </div>
+            <div class="p-5">
+                <p class="underline text-2xl font-normal">{{sevenPara}}</p>
+                <p class="text-base font-normal">{{eightPara}}</p>
             </div>
         </div>
     </div>
