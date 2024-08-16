@@ -6,6 +6,8 @@ import { BenefitsApiImplementingComponent } from './modules/blogs/benefits-api-i
 import { JavaFutureComponent } from './modules/blogs/java-future/java-future.component';
 import { ReactjsPopularComponent } from './modules/blogs/reactjs-popular/reactjs-popular.component';
 import { MostPopularComponent } from './modules/blogs/most-popular/most-popular.component';
+import { PortfolioComponent } from './modules/company/portfolio/portfolio.component';
+import { AboutUsComponent } from './modules/company/about-us/about-us.component';
 
 export const routes: Routes = [
     {path:'',component:HomeComponent},
@@ -15,5 +17,7 @@ export const routes: Routes = [
     {path:'most-popular',component:MostPopularComponent},
     {path:'react-popular',component:ReactjsPopularComponent},
     {path:'java-future',component:JavaFutureComponent},
+    {path:'portfolio',component:PortfolioComponent},
+    {path:'about_us',component:AboutUsComponent},
     {path:'**',component:HomeComponent},
 ];
