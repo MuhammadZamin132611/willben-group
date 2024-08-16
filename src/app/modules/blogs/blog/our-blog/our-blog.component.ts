@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -18,4 +18,5 @@ export class OurBlogComponent {
   sevenPara: string = `Is java future of App Development ?`;
   eightPara: string = `When developing applications, the choice of programming language can be important....`;
 
+  @Input() title: any
 }

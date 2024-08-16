@@ -8,6 +8,7 @@ import { ReactjsPopularComponent } from './modules/blogs/reactjs-popular/reactjs
 import { MostPopularComponent } from './modules/blogs/most-popular/most-popular.component';
 import { PortfolioComponent } from './modules/company/portfolio/portfolio.component';
 import { AboutUsComponent } from './modules/company/about-us/about-us.component';
+import { SoftwareProductDevelopmentComponent } from './modules/services/software-product-development/software-product-development.component';
 
 export const routes: Routes = [
     {path:'',component:HomeComponent},
@@ -19,5 +20,6 @@ export const routes: Routes = [
     {path:'java-future',component:JavaFutureComponent},
     {path:'portfolio',component:PortfolioComponent},
     {path:'about_us',component:AboutUsComponent},
+    {path:'softwareproduct',component:SoftwareProductDevelopmentComponent},
     {path:'**',component:HomeComponent},
 ];

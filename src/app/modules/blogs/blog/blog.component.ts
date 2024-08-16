@@ -10,5 +10,6 @@ import { OurBlogComponent } from "./our-blog/our-blog.component";
   styleUrl: './blog.component.scss'
 })
 export class BlogComponent {
+  title:string='Our Blogs'
 
 }
