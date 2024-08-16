@@ -79,4 +79,95 @@
         </div>
     </div>
 </div>
-<app-our-blog />    
+<div class="bg-white md:px-20 md:py-16 p-5">
+    <div class="grid lg:grid-cols-2 gap-5">
+        <div>
+            <p class="text-2xl md:text-4xl font-medium">Our Leading Multinational Clients</p>
+            <p class="text-base font-normal">Join our diverse client base for a digital transformation journey</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-5">
+            <img src="../../../../assets/mindLife.webp" alt="mindLife">
+            <img src="../../../../assets/theWorldBank.webp" alt="theWorldBank">
+            <img src="../../../../assets/casio.png" alt="casio">
+        </div>
+    </div>
+</div>
+<div class="bg-[#F3F6FF] md:px-20 md:py-16 p-5">
+    <div>
+        <p class="text-4xl font-medium text-center">Technologies & Platforms We Work With</p>
+        <p class="text-sm font-normal text-center">We understand the importance of technical competency and business
+            acumen for building unique software products.
+            We go beyond set standards and norms to meet expectations</p>
+    </div>
+    <div class="grid place-content-center justify-center">
+        <div class="flex gap-10 text-base tracking-wide">
+            <p (click)="viewFonted()">FRONTED</p>
+            <p (click)="viewBackend()">BACKEND</p>
+            <p (click)="viewMobile()">MOBILE</p>
+        </div>
+    </div>
+    @if(forntend){
+    <div class="grid place-content-center justify-center">
+        <div class="flex flex-wrap gap-5">
+            <div class="hover:bg-white hover:shadow-md">
+                <img class="p-5 h-20 w-20" src="../../../../assets/javascript.svg" alt="javascript">
+            </div>
+            <div class="hover:bg-white hover:shadow-md">
+                <img class="p-5 h-20 w-20" src="../../../../assets/html.svg" alt="html">
+            </div>
+            <div class="hover:bg-white hover:shadow-md">
+                <img class="p-5 h-20 w-20" src="../../../../assets/css.svg" alt="css">
+            </div>
+            <div class="hover:bg-white hover:shadow-md">
+                <img class="p-5 h-20 w-20" src="../../../../assets/angular.webp" alt="angular">
+            </div>
+            <div class="hover:bg-white hover:shadow-md">
+                <img class="p-5 h-20 w-20" src="../../../../assets/react.svg" alt="react">
+            </div>
+            <div class="hover:bg-white hover:shadow-md">
+                <img class="p-5 h-20 w-20" src="../../../../assets/ember.svg" alt="ember">
+            </div>
+        </div>
+    </div>
+    }
+    @if(backend){
+    <div class="grid place-content-center justify-center">
+        <div class="flex flex-wrap gap-5">
+            <div class="hover:bg-white hover:shadow-md">
+                <img class="p-5 h-20 w-20" src="../../../../assets/java.svg" alt="java">
+            </div>
+            <div class="hover:bg-white hover:shadow-md">
+                <img class="p-5 h-20 w-20" src="../../../../assets/nextjs.png" alt="nextjs">
+            </div>
+            <div class="hover:bg-white hover:shadow-md">
+                <img class="p-5 h-20 w-20" src="../../../../assets/nodejs.svg" alt="nodejs">
+            </div>
+            <div class="hover:bg-white hover:shadow-md">
+                <img class="p-5 h-20 w-20" src="../../../../assets/dotnet.svg" alt="dotnet">
+            </div>
+        </div>
+    </div>
+    }
+    @if(mobile){
+    <div class="grid place-content-center justify-center">
+        <div class="flex flex-wrap gap-5">
+            <div class="hover:bg-white hover:shadow-md">
+                <img class="p-5 h-20 w-20" src="../../../../assets/flutter.svg" alt="flutter">
+            </div>
+            <div class="hover:bg-white hover:shadow-md">
+                <img class="p-5 h-20 w-20" src="../../../../assets/react.svg" alt="reactNative">
+            </div>
+            <div class="hover:bg-white hover:shadow-md">
+                <img class="p-5 h-20 w-20" src="../../../../assets/ionic.svg" alt="ionic">
+            </div>
+            <div class="hover:bg-white hover:shadow-md">
+                <img class="p-5 h-20 w-20" src="../../../../assets/android.svg" alt="android">
+            </div>
+            <div class="hover:bg-white hover:shadow-md">
+                <img class="p-5 h-20 w-20" src="../../../../assets/pwa.svg" alt="pwa">
+            </div>
+        </div>
+    </div>
+    }
+</div>
+<app-our-blog [title]="title" />
