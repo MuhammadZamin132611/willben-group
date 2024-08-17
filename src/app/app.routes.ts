@@ -14,6 +14,7 @@ import { SaasDevelopmentComponent } from './modules/services/saas-development/sa
 import { ApplicationDevelopmentComponent } from './modules/services/application-development/application-development.component';
 import { WebAppDevelopmentComponent } from './modules/services/web-app-development/web-app-development.component';
 import { SoftwareTestingComponent } from './modules/services/software-testing/software-testing.component';
+import { UiuxDesignComponent } from './modules/services/uiux-design/uiux-design.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -31,5 +32,6 @@ export const routes: Routes = [
     { path: 'application-development', component: ApplicationDevelopmentComponent },
     { path: 'web-development', component: WebAppDevelopmentComponent },
     { path: 'software-testing', component: SoftwareTestingComponent },
+    { path: 'uiux-design', component: UiuxDesignComponent },
     { path: '**', component: HomeComponent },
 ];

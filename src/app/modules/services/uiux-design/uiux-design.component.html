@@ -1,0 +1,54 @@
+<app-services-top-part [serviceTopPart]="serviceTopPart" />
+<app-single-card-service [singlaCard]="singlaCard" />
+<div class="bg-[#F3F6FF] md:px-20 md:py-16 p-5">
+    <div>
+        <p class="text-4xl font-medium text-center">Technologies & Platforms We Work With</p>
+        <p class="text-sm font-normal text-center">We understand the importance of technical competency and business
+            acumen for building unique software products.
+            We go beyond set standards and norms to meet expectations</p>
+    </div>
+    <div class="grid place-content-center justify-center">
+        <div class="flex gap-10 text-base tracking-wide cursor-pointer">
+            <p (click)="viewLanguageAndTechnologies()">LANGUAGE & TECHNOLOGIES</p>
+            <p (click)="viewWireframeAndPrototype()">WIREFRAME & PROTOTYPE</p>
+            <p (click)="viewUiuxvisualDesign()">UI/UX (VISUAL DESIGNS)</p>
+            <p (click)="viewCollaboration()">COLLABORATION</p>
+        </div>
+    </div>
+    @if(languageAndTechnologies){
+    <div class="grid place-content-center justify-center">
+        <div class="flex flex-wrap gap-5">
+            <div *ngFor="let logo of languageAndTechnologiesImages.images" class="hover:bg-white hover:shadow-md">
+                <img class="p-5 h-20 w-20" [src]="logo.image" [alt]="logo.imageName">
+            </div>
+        </div>
+    </div>
+    }
+    @if(wireframeAndPrototype){
+    <div class="grid place-content-center justify-center">
+        <div class="flex flex-wrap gap-5">
+            <div *ngFor="let logo of wireframeAndPrototypeImages.images" class="hover:bg-white hover:shadow-md">
+                <img class="p-5 h-20 w-20" [src]="logo.image" [alt]="logo.imageName">
+            </div>
+        </div>
+    </div>
+    }
+    @if(uiuxvisualDesign){
+    <div class="grid place-content-center justify-center">
+        <div class="flex flex-wrap gap-5">
+            <div *ngFor="let logo of uiuxvisualDesignImages.images" class="hover:bg-white hover:shadow-md">
+                <img class="p-5 h-20 w-20" [src]="logo.image" [alt]="logo.imageName">
+            </div>
+        </div>
+    </div>
+    }
+    @if(collaboration){
+    <div class="grid place-content-center justify-center">
+        <div class="flex flex-wrap gap-5">
+            <div *ngFor="let logo of collaborationImages.images" class="hover:bg-white hover:shadow-md">
+                <img class="p-5 h-20 w-20" [src]="logo.image" [alt]="logo.imageName">
+            </div>
+        </div>
+    </div>
+    }
+</div>

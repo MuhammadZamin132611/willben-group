@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="57.991" height="52" viewBox="0 0 57.991 52">
+  <g id="sketchapp-icon" transform="translate(-0.683 -3.086)">
+    <path id="Path_19194" data-name="Path 19194" d="M12.651,1.712,28.993,0,45.335,1.712l12.653,16.83L28.994,52,0,18.542Z" transform="translate(0.683 3.086)" fill="#1a1a1a" fill-rule="evenodd"/>
+    <g id="Group_15704" data-name="Group 15704" transform="translate(0.683 21.63)">
+      <path id="Path_19195" data-name="Path 19195" d="M11.816,0,29.169,33.456,0,0Z" transform="translate(0 0)" fill="#1a1a1a" fill-rule="evenodd"/>
+      <path id="Path_19196" data-name="Path 19196" d="M11.816,33.456,29.171,0,0,33.456Z" transform="translate(57.991 33.456) rotate(180)" fill="#1a1a1a" fill-rule="evenodd"/>
+    </g>
+    <path id="Path_19197" data-name="Path 19197" d="M0,0H34.289L17.144,33.456Z" transform="translate(12.234 21.63)" fill="#404040" fill-rule="evenodd"/>
+    <g id="Group_15705" data-name="Group 15705" transform="translate(12.063 3.086)">
+      <path id="Path_19198" data-name="Path 19198" d="M17.027,0,.9,1.741,0,18.856Z" fill="#1a1a1a" fill-rule="evenodd"/>
+      <path id="Path_19199" data-name="Path 19199" d="M17.027,18.856.9,17.116,0,0Z" transform="translate(34.63 18.856) rotate(180)" fill="#1a1a1a" fill-rule="evenodd"/>
+    </g>
+    <g id="Group_15706" data-name="Group 15706" transform="translate(0.684 4.91)">
+      <path id="Path_19200" data-name="Path 19200" d="M0,0,12.762,17.033,11.847,0Z" transform="translate(57.991 17.033) rotate(180)" fill="#404040" fill-rule="evenodd"/>
+      <path id="Path_19201" data-name="Path 19201" d="M0,17.033,12.761,0l-.916,17.033Z" transform="translate(0 0)" fill="#404040" fill-rule="evenodd"/>
+    </g>
+    <path id="Path_19202" data-name="Path 19202" d="M17.144,0,0,18.856H34.289Z" transform="translate(12.234 3.086)" fill="#404040" fill-rule="evenodd"/>
+  </g>
+</svg>
