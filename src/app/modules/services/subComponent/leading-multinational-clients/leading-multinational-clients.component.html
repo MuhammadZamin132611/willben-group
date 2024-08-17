@@ -1,0 +1,13 @@
+<div class="bg-white md:px-20 md:py-16 p-5">
+    <div class="grid lg:grid-cols-2 gap-5">
+        <div>
+            <p class="text-2xl md:text-4xl font-medium">{{multinationalClients.heading}}</p>
+            <p class="text-base font-normal">{{multinationalClients.paragraph}}</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-5">
+            <span *ngFor="let logo of multinationalClients.images">
+                <img [src]="logo.image" [alt]="logo.logoName">
+            </span>
+        </div>
+    </div>
+</div>

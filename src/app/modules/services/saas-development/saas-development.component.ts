@@ -1,15 +1,19 @@
 import { Component } from '@angular/core';
 import { ServicesTopPartComponent } from "../subComponent/services-top-part/services-top-part.component";
 import { SingleCardServiceComponent } from "../subComponent/single-card-service/single-card-service.component";
+import { OurBlogComponent } from '../../blogs/blog/our-blog/our-blog.component';
+import { LeadingMultinationalClientsComponent } from "../subComponent/leading-multinational-clients/leading-multinational-clients.component";
+import { TechnologiesPlatformComponent } from "../subComponent/technologies-platform/technologies-platform.component";
 
 @Component({
   selector: 'app-saas-development',
   standalone: true,
-  imports: [ServicesTopPartComponent, SingleCardServiceComponent],
+  imports: [ServicesTopPartComponent, SingleCardServiceComponent, OurBlogComponent, LeadingMultinationalClientsComponent, TechnologiesPlatformComponent],
   templateUrl: './saas-development.component.html',
   styleUrl: './saas-development.component.scss'
 })
 export class SaasDevelopmentComponent {
+  title: string = 'Insights';
 
   serviceTopPart = {
     heading: 'Software as a Services',
@@ -58,6 +62,26 @@ export class SaasDevelopmentComponent {
         paragraph: `The development team of our SaaS applications considers multiple factors starting from the concept and continuing through design, prototyping, testing, and launch. You can take advantage of flexible, stable, and secure SaaS applications because the team has experience with SaaS architectural implementation techniques.`
       },
     ]
-  }
+  };
+
+
+  multinationalClients = {
+    heading: 'Our Leading Multinational Clients',
+    paragraph: 'Join our diverse client base for a digital transformation journey',
+    images: [
+      {
+        image: '../../../../assets/mindLife.webp',
+        logoName: 'mindLife'
+      },
+      {
+        image: '../../../../assets/theWorldBank.webp',
+        logoName: 'theWorldBank'
+      },
+      {
+        image: '../../../../assets/casio.png',
+        logoName: 'casio'
+      },
+    ]
+  };
 
 }
