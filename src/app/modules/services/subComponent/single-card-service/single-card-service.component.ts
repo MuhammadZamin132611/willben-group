@@ -14,7 +14,7 @@ export class SingleCardServiceComponent {
     cardImage: '',
     cardParagrapg: [
       {
-        paragraph: ''
+        paragraph: ``
       },
     ]
   };

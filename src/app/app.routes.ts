@@ -13,6 +13,7 @@ import { CustomerSoftwareDevelopmentComponent } from './modules/services/custome
 import { SaasDevelopmentComponent } from './modules/services/saas-development/saas-development.component';
 import { ApplicationDevelopmentComponent } from './modules/services/application-development/application-development.component';
 import { WebAppDevelopmentComponent } from './modules/services/web-app-development/web-app-development.component';
+import { SoftwareTestingComponent } from './modules/services/software-testing/software-testing.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -29,5 +30,6 @@ export const routes: Routes = [
     { path: 'saas-development-service', component: SaasDevelopmentComponent },
     { path: 'application-development', component: ApplicationDevelopmentComponent },
     { path: 'web-development', component: WebAppDevelopmentComponent },
+    { path: 'software-testing', component: SoftwareTestingComponent },
     { path: '**', component: HomeComponent },
 ];

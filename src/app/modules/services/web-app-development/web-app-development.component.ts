@@ -16,12 +16,12 @@ export class WebAppDevelopmentComponent {
   title: string = 'Insights'
   serviceTopPart = {
     heading: 'Web Application Development Services',
-    paragraph: 'Gain a competitive edge by quickening the development of your web applications with Senwell Group Private Limited',
+    paragraph: 'Gain a competitive edge by quickening the development of your web applications with Willben Group Private Limited',
     topCard: [
       {
         cardHeading: 'Front-end Web Development',
         cardImage: '../../../../assets/fronted-developer.png',
-        cardParagrapg: `Make use of the reusable components and implement component-driven architecture with cutting-edge front-end technologies such as Angular, Vue, and React.js. Senwell Group Private Limited develops web applications and skillfully blends necessary functionalities with gorgeous user interfaces.`,
+        cardParagrapg: `Make use of the reusable components and implement component-driven architecture with cutting-edge front-end technologies such as Angular, Vue, and React.js. Willben Group Private Limited develops web applications and skillfully blends necessary functionalities with gorgeous user interfaces.`,
       },
       {
         cardHeading: 'Back-end Development',
