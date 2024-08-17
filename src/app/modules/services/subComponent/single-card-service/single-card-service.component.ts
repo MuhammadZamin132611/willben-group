@@ -10,14 +10,14 @@ import { Component, Input } from '@angular/core';
 })
 export class SingleCardServiceComponent {
   @Input() singlaCard: Card = {
-    cardHeading:'',
-    cardImage:'',
-    cardParagrapg:[
+    cardHeading: '',
+    cardImage: '',
+    cardParagrapg: [
       {
-        paragraph:''
-      }
+        paragraph: ''
+      },
     ]
-  }
+  };
 
 }
 
