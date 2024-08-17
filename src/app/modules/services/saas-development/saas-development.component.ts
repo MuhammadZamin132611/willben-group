@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { ServicesTopPartComponent } from "../subComponent/services-top-part/services-top-part.component";
+import { SingleCardServiceComponent } from "../subComponent/single-card-service/single-card-service.component";
 
 @Component({
   selector: 'app-saas-development',
   standalone: true,
-  imports: [ServicesTopPartComponent],
+  imports: [ServicesTopPartComponent, SingleCardServiceComponent],
   templateUrl: './saas-development.component.html',
   styleUrl: './saas-development.component.scss'
 })
@@ -16,7 +17,7 @@ export class SaasDevelopmentComponent {
     topCard: [
       {
         cardHeading: 'SaaS Development Consulting',
-        cardImageName:'SaaS Development',
+        cardImageName: 'SaaS Development',
         cardImage: '../../../../assets/bespoke.png',
         cardParagrapg: `Our SaaS solutions have a proven track record of generating real, measurable business success for organizations. We follow a carefully thought-out path for implementing SaaS that uses cutting-edge tools, processes, and schedules without straying from your long-term company objectives. Get your SaaS ideas implemented and take advantage of promising SaaS solutions to aid in the generation of ongoing income development.`,
       },
@@ -42,5 +43,21 @@ export class SaasDevelopmentComponent {
       },
     ],
   };
+
+  singlaCard = {
+    cardHeading: 'Leading provider of SaaS application development',
+    cardImage: '../../../../assets/saasDevelopment.png',
+    cardParagrapg: [
+      {
+        paragraph: `Discover our innovative methods for developing SaaS applications and the measurable growth results they bring to your business. In the cloud computing space, we are raising the standard for SaaS integration services and helping a range of companies, including startups, SMEs, ISVs, and enterprises, turn a profit of millions of dollars.`
+      },
+      {
+        paragraph: `Our team of knowledgeable SaaS developers is readily available to help you achieve your goal of gaining a competitive edge in the market. We provide you state-of-the-art SaaS applications with better performance at more affordable costs.`
+      },
+      {
+        paragraph: `The development team of our SaaS applications considers multiple factors starting from the concept and continuing through design, prototyping, testing, and launch. You can take advantage of flexible, stable, and secure SaaS applications because the team has experience with SaaS architectural implementation techniques.`
+      },
+    ]
+  }
 
 }

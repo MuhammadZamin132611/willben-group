@@ -34,5 +34,5 @@ interface Card {
 interface Services {
   heading: string;
   paragraph: string;
-  topCard: Card[]; // Array of Card objects
+  topCard: Card[]; 
 }
