@@ -11,6 +11,7 @@ import { AboutUsComponent } from './modules/company/about-us/about-us.component'
 import { SoftwareProductDevelopmentComponent } from './modules/services/software-product-development/software-product-development.component';
 import { CustomerSoftwareDevelopmentComponent } from './modules/services/customer-software-development/customer-software-development.component';
 import { SaasDevelopmentComponent } from './modules/services/saas-development/saas-development.component';
+import { ApplicationDevelopmentComponent } from './modules/services/application-development/application-development.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -25,5 +26,6 @@ export const routes: Routes = [
     { path: 'softwareproduct', component: SoftwareProductDevelopmentComponent },
     { path: 'customer-software-developmen', component: CustomerSoftwareDevelopmentComponent },
     { path: 'saas-development-service', component: SaasDevelopmentComponent },
+    { path: 'application-development', component: ApplicationDevelopmentComponent },
     { path: '**', component: HomeComponent },
 ];
