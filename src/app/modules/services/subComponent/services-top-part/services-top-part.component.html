@@ -1,0 +1,25 @@
+<div class="bg-[#F8F8F8] md:px-20 md:py-16 p-5">
+    <p class="text-3xl font-normal text-center text-[#0b2e58] tracking-wide">{{serviceTopPart.heading}}</p>
+    <p class="text-lg text-center font-normal">{{serviceTopPart.paragraph}}</p>
+    <div class="grid lg:grid-cols-3 gap-5">
+        <!-- @for(let card of serviceTopPart.topCard; track card){}
+        <div class="bg-white p-5">
+            <img class="h-16 w-16" src="../../../../assets/bespoke.png" alt="bespoke">
+            <p class="text-xl font-medium tracking-wide py-5">{{serviceTopPart.topCard}}</p>
+            <p class="text-base tracking-wide font-normal text-justify">Excellent custom software development services,
+                technical expertise, and knowledgeable resources are paired to enhance overall business strategy. Using
+                a proven prototyping methodology and comprehensive custom development plan, we build custom applications
+                from the ground up for mobile, web, and cloud platforms, guaranteeing smooth integration, adaptability,
+                and financial success for our clients.</p>
+        </div> -->
+        <div *ngFor="let card of serviceTopPart.topCard" class="bg-white p-5">
+            <img class="h-16 w-16" [src]="card.cardImage" [alt]="card.cardHeading">
+            <p class="text-xl font-medium tracking-wide py-5">{{ card.cardHeading }}</p>
+            <p class="text-base tracking-wide font-normal text-justify">
+              {{ card.cardParagrapg }}
+            </p>
+          </div>
+          
+        
+    </div>
+</div>

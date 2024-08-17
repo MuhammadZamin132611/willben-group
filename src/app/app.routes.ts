@@ -10,18 +10,20 @@ import { PortfolioComponent } from './modules/company/portfolio/portfolio.compon
 import { AboutUsComponent } from './modules/company/about-us/about-us.component';
 import { SoftwareProductDevelopmentComponent } from './modules/services/software-product-development/software-product-development.component';
 import { CustomerSoftwareDevelopmentComponent } from './modules/services/customer-software-development/customer-software-development.component';
+import { SaasDevelopmentComponent } from './modules/services/saas-development/saas-development.component';
 
 export const routes: Routes = [
-    {path:'',component:HomeComponent},
-    {path:'contact',component:ContactComponent},
-    {path:'blog',component:BlogComponent},
-    {path:'benifit',component:BenefitsApiImplementingComponent},
-    {path:'most-popular',component:MostPopularComponent},
-    {path:'react-popular',component:ReactjsPopularComponent},
-    {path:'java-future',component:JavaFutureComponent},
-    {path:'portfolio',component:PortfolioComponent},
-    {path:'about_us',component:AboutUsComponent},
-    {path:'softwareproduct',component:SoftwareProductDevelopmentComponent},
-    {path:'customer-software-developmen',component:CustomerSoftwareDevelopmentComponent},
-    {path:'**',component:HomeComponent},
+    { path: '', component: HomeComponent },
+    { path: 'contact', component: ContactComponent },
+    { path: 'blog', component: BlogComponent },
+    { path: 'benifit', component: BenefitsApiImplementingComponent },
+    { path: 'most-popular', component: MostPopularComponent },
+    { path: 'react-popular', component: ReactjsPopularComponent },
+    { path: 'java-future', component: JavaFutureComponent },
+    { path: 'portfolio', component: PortfolioComponent },
+    { path: 'about_us', component: AboutUsComponent },
+    { path: 'softwareproduct', component: SoftwareProductDevelopmentComponent },
+    { path: 'customer-software-developmen', component: CustomerSoftwareDevelopmentComponent },
+    { path: 'saas-development-service', component: SaasDevelopmentComponent },
+    { path: '**', component: HomeComponent },
 ];
