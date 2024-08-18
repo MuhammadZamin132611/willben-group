@@ -6,23 +6,42 @@
         <p class="text-3xl">{{heading}}</p>
         <p class="text-base">{{paragraph1}}</p>
     </div>
-    <div  class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
         <div *ngFor="let card of cloudPlatform.singleCardDetails" class="bg-white shadow-lg rounded mb-4">
             <div class="grid place-content-center justify-center p-3 md:p-5">
-              <img [src]="card.image" [alt]="card.imageName">
+                <img [src]="card.image" [alt]="card.imageName">
             </div>
             <mat-divider></mat-divider>
             <div class="p-3 md:p-5">
-              <div class="grid gap-3 text-base font-normal">
-                <p class="text-lg underline" *ngIf="card.paragraphs.length">{{ card.paragraphs[0].paragraph }}</p>
-                <p *ngFor="let para of card.paragraphs.slice(1)">{{ para.paragraph }}</p>
-              </div>
-              <ul *ngIf="card.allLists && card.allLists.length" class="list-disc px-5">
-                <li *ngFor="let item of card.allLists">{{ item.list }}</li>
-              </ul>
+                <div class="grid gap-3 text-base font-normal">
+                    <p class="text-lg underline" *ngIf="card.paragraphs.length">{{ card.paragraphs[0].paragraph }}</p>
+                    <p *ngFor="let para of card.paragraphs.slice(1)">{{ para.paragraph }}</p>
+                </div>
+                <ul *ngIf="card.allLists && card.allLists.length" class="list-disc px-5">
+                    <li *ngFor="let item of card.allLists">{{ item.list }}</li>
+                </ul>
             </div>
-          </div>
+        </div>
     </div>
 </div>
-
+<div class="bg-[#F3F6FF] md:px-20 md:py-16 p-5">
+    <div class="text-center font-nromal tracking-wide">
+        <p class="text-3xl">Our Technical Strength Is Developing Cutting-Edge Cloud-Based Solutions</p>
+        <p class="text-base">Our solution design specialists' tech stack knowledge enables organizations to migrate to
+            the cloud more
+            affordably, implement cost-effective and specialized cloud solutions for key components of their IT
+            infrastructure, and adapt to changing business requirements</p>
+        <div class="grid grid-cols-3 gap-5 md:px-40">
+            <div *ngFor="let logo of ourTechnicalStrength.logoAndText" class="grid place-content-center justify-center">
+                <div class="flex">
+                    <div  class="grid place-items-center justify-center">
+                        <img class="h-14" [src]="logo.image" [alt]="logo.heading">
+                        <p class="">{{logo.heading}}</p>
+                    </div>
+                    <div class="bg-[#D8D8D8] w-0.5 rounded-full ml-10 h-24"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- <img src="../../../../assets/microSoftAzure.svg" alt=""> -->

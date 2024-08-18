@@ -162,7 +162,39 @@ export class CloudServicesComponent {
     ]
   }
 
+
+  ourTechnicalStrength:OurTechnicalStrength = {
+    logoAndText: [
+      {
+        heading: 'AWS',
+        image: '../../../../assets/aws.svg'
+      },
+      {
+        heading: 'Azure',
+        image: '../../../../assets/azure.svg'
+      },
+      {
+        heading: 'Kubernet',
+        image: '../../../../assets/kubernet.svg'
+      },
+      {
+        heading: 'Docker',
+        image: '../../../../assets/docker.webp'
+      },
+      {
+        heading: 'Anisble',
+        image: '../../../../assets/anisble.svg'
+      },
+      {
+        heading: 'Google Cloud Platform',
+        image: '../../../../assets/googleCloudLogo.svg'
+      },
+    ]
+  }
+
+
 }
+
 
 interface CloudPlatform {
   singleCardDetails: CardDetail[];
@@ -182,3 +214,42 @@ interface Paragraph {
 interface ListItem {
   list: string;
 }
+
+
+// cloudPlatform = {
+//   singleCardDetails: [
+//     {
+//       image: "",
+//       imageName: "",
+//       paragraphs: [
+//         {
+//           paragraph: ""
+//         },
+//       ],
+//       allLists: [
+//         {
+//           list: ""
+//         },
+//       ]
+//     },
+//   ]
+// }
+
+
+interface OurTechnicalStrength {
+  logoAndText: LogoAndText[];
+}
+
+interface LogoAndText {
+  heading: string;
+  image: string
+}
+
+// ourTechnicalStrength = {
+//   logoAndText: [
+//     {
+//       heading: '',
+//       image: ''
+//     }
+//   ]
+// }
