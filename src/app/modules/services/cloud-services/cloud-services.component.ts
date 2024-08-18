@@ -192,6 +192,8 @@ export class CloudServicesComponent {
     ]
   }
 
+  paragraph:string='Our Technical Strength Is Developing Cutting-Edge Cloud-Based Solutions';
+  paragraph2:string=`Our solution design specialists' tech stack knowledge enables organizations to migrate to the cloud more affordably, implement cost-effective and specialized cloud solutions for key components of their IT infrastructure, and adapt to changing business requirements`;
 
 }
 
