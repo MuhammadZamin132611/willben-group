@@ -6,53 +6,23 @@
         <p class="text-3xl">{{heading}}</p>
         <p class="text-base">{{paragraph1}}</p>
     </div>
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-        <div class="bg-white shadow-lg rounded ">
+    <div  class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div *ngFor="let card of cloudPlatform.singleCardDetails" class="bg-white shadow-lg rounded mb-4">
             <div class="grid place-content-center justify-center p-3 md:p-5">
-                <img src="../../../../assets/awsImages.svg" alt="aws">
+              <img [src]="card.image" [alt]="card.imageName">
             </div>
-            <mat-divider />
+            <mat-divider></mat-divider>
             <div class="p-3 md:p-5">
-                <div class="grid gap-3 text-base font-normal">
-                    <p class="text-lg underline">AWS Consulting Services</p>
-                    <p>We have been providing enterprise-level AWS-based solutions and a wide range of AWS consulting
-                        services as a certified Amazon Consulting Partner. We are able to provide clients throughout the
-                        world with value-added solutions because to Amazon goods' special capabilities.</p>
-                    <p>We provide to build your cloud-native development or AWS migration plan and make it possible for
-                        your
-                        AWS-based infrastructure to be used economically.</p>
-                    <p>Our offerings include:</p>
-                </div>
-                <ul class="list-disc px-5">
-                    <li>Services for AWS migration</li>
-                    <li>development services with AWS</li>
-                    <li>built on AWS microservices</li>
-                    <li>architecture without servers</li>
-                </ul>
+              <div class="grid gap-3 text-base font-normal">
+                <p class="text-lg underline" *ngIf="card.paragraphs.length">{{ card.paragraphs[0].paragraph }}</p>
+                <p *ngFor="let para of card.paragraphs.slice(1)">{{ para.paragraph }}</p>
+              </div>
+              <ul *ngIf="card.allLists && card.allLists.length" class="list-disc px-5">
+                <li *ngFor="let item of card.allLists">{{ item.list }}</li>
+              </ul>
             </div>
-        </div><div class="bg-white shadow-lg rounded ">
-            <div class="grid place-content-center justify-center p-3 md:p-5">
-                <img src="../../../../assets/awsImages.svg" alt="aws">
-            </div>
-            <mat-divider />
-            <div class="p-3 md:p-5">
-                <div class="grid gap-3 text-base font-normal">
-                    <p class="text-lg underline">AWS Consulting Services</p>
-                    <p>We have been providing enterprise-level AWS-based solutions and a wide range of AWS consulting
-                        services as a certified Amazon Consulting Partner. We are able to provide clients throughout the
-                        world with value-added solutions because to Amazon goods' special capabilities.</p>
-                    <p>We provide to build your cloud-native development or AWS migration plan and make it possible for
-                        your
-                        AWS-based infrastructure to be used economically.</p>
-                    <p>Our offerings include:</p>
-                </div>
-                <ul class="list-disc px-5">
-                    <li>Services for AWS migration</li>
-                    <li>development services with AWS</li>
-                    <li>built on AWS microservices</li>
-                    <li>architecture without servers</li>
-                </ul>
-            </div>
-        </div>
+          </div>
     </div>
 </div>
+
+<!-- <img src="../../../../assets/microSoftAzure.svg" alt=""> -->
