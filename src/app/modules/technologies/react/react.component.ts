@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { HeadingDescriptionComponent } from "../sub-component/heading-description/heading-description.component";
 import { ExplainPlatformComponent } from "../sub-component/explain-platform/explain-platform.component";
 import { RouterLink } from '@angular/router';
+import { TechStackComponent } from "../sub-component/tech-stack/tech-stack.component";
 
 @Component({
   selector: 'app-react',
   standalone: true,
-  imports: [HeadingDescriptionComponent, ExplainPlatformComponent, RouterLink],
+  imports: [HeadingDescriptionComponent, ExplainPlatformComponent, RouterLink, TechStackComponent],
   templateUrl: './react.component.html',
   styleUrl: './react.component.scss'
 })
