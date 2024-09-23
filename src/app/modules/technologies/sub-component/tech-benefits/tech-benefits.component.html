@@ -1,0 +1,18 @@
+<div class="bg-[#FBFBFB] p-5 md:p-10">
+    <p class="text-xl font-medium text-center md:text-center lg:text-start">{{techBenefits.techName}}</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div *ngFor="let data of techBenefits.techDescription">
+            <span class="rounded-full p-1.5 text-white"
+                style="background: linear-gradient(90deg, hsla(200, 73%, 52%, 1) 44%, hsla(220, 60%, 37%, 1) 100%);">{{data.count}}</span>
+            <p class="text-base font-normal pt-2">{{data.subHeading}}</p>
+            <p class="text-justify">{{data.subParagraph}}</p>
+        </div>
+    </div>
+    <p class="text-4xl font-semibold tracking-wide text-center">{{techBenefits.heading}}</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div *ngFor="let data of techBenefits.aboutTech" class="text-center">
+            <p class="text-base font-medium">{{data.subHeading}}</p>
+            <p class="text-base font-normal">{{data.subParagraph}}</p>
+        </div>
+    </div>
+</div>
