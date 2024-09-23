@@ -17,6 +17,7 @@ import { SoftwareTestingComponent } from './modules/services/software-testing/so
 import { UiuxDesignComponent } from './modules/services/uiux-design/uiux-design.component';
 import { CloudServicesComponent } from './modules/services/cloud-services/cloud-services.component';
 import { ReactComponent } from './modules/technologies/react/react.component';
+import { AngularComponent } from './modules/technologies/angular/angular.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -37,5 +38,6 @@ export const routes: Routes = [
     { path: 'uiux-design', component: UiuxDesignComponent },
     { path: 'cloud-services', component: CloudServicesComponent },
     { path: 'react', component: ReactComponent },
+    { path: 'angular', component: AngularComponent },
     { path: '**', component: HomeComponent },
 ];
