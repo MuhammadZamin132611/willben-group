@@ -1,14 +1,14 @@
 <div class="bg-[#FBFBFB] p-5 md:p-10">
-    <p class="text-[#212529] text-2xl font-medium text-center">{{techStack.heading}}</p>
-    <p class="text-base font-normal text-justify">{{techStack.paragraph}}</p>
+    <p class="text-[#212529] py-2 text-2xl font-medium text-center">{{techStack.heading}}</p>
+    <p class="text-base font-normal pb-4 text-justify">{{techStack.paragraph}}</p>
     <div class="flex flex-wrap justify-center place-content-center gap-10">
-        <div *ngFor="let data of techStack.techImages" class="bg-white shadow-lg rounded-md  border-b-4 border-white hover:border-[#2156A0]">
+        <div *ngFor="let data of techStack.techImages" class="bg-white w-36 grid justify-center place-content-center shadow-lg rounded-md  border-b-4 border-white hover:border-[#2156A0]">
             <img class="w-32 px-5 pt-2" [src]="data.logo" [alt]="data.techName">
             <p class="text-center pt-1 text-lg font-normal">{{data.techName}}</p>
         </div>
     </div>
     <div class="pt-5">
-        <p class="text-center font-medium text-2xl">{{techStack.aboutTech.heading}}</p>
+        <p class="text-center font-medium pt-7 pb-4 text-2xl">{{techStack.aboutTech.heading}}</p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div *ngFor="let data of techStack.aboutTech.aboutDetails" class="text-base">
                 <p class="font-medium">{{data.subHeading}}</p>
