@@ -20,6 +20,7 @@ import { AngularComponent } from './modules/technologies/frontend/angular/angula
 import { NextjsComponent } from './modules/technologies/frontend/nextjs/nextjs.component';
 import { ReactComponent } from './modules/technologies/frontend/react/react.component';
 import { DotNetComponent } from './modules/technologies/backend/dot-net/dot-net.component';
+import { NodeJsComponent } from './modules/technologies/backend/node-js/node-js.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -43,5 +44,6 @@ export const routes: Routes = [
     { path: 'angular', component: AngularComponent },
     { path: 'next', component: NextjsComponent },
     { path: 'dot-net', component: DotNetComponent },
+    { path: 'nodejs', component: NodeJsComponent },
     { path: '**', component: HomeComponent },
 ];
