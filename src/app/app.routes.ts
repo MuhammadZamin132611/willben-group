@@ -24,6 +24,7 @@ import { NodeJsComponent } from './modules/technologies/backend/node-js/node-js.
 import { JavaComponent } from './modules/technologies/backend/java/java.component';
 import { NestJsComponent } from './modules/technologies/backend/nest-js/nest-js.component';
 import { IosComponent } from './modules/technologies/mobile/ios/ios.component';
+import { AndroidComponent } from './modules/technologies/mobile/android/android.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -51,5 +52,6 @@ export const routes: Routes = [
     { path: 'java', component: JavaComponent },
     { path: 'nest', component: NestJsComponent },
     { path: 'ios', component: IosComponent },
+    { path: 'android', component: AndroidComponent },
     { path: '**', component: HomeComponent },
 ];
