@@ -1,0 +1,23 @@
+<!-- <app-heading-description/> -->
+<div class="bg-[#FDF4FE] md:px-20 p-5" style="height: 50%;">
+    <div class="grid lg:grid-cols-2">
+        <div class="tracking-wide grid place-content-center justify-center">
+            <p class="text-3xl font-semibold text-center md:text-start">Angular Developer</p>
+            <p class="text-base font-normal text-justify">Elevate your business with our exceptional Angular development
+                services! We craft high-performance web apps that set you apart from the competition. Our skilled team
+                ensures custom solutions tailored to your needs, delivering top-notch performance, responsiveness, and
+                security. Embrace digital transformation and stay ahead in the market. Contact us now to turn your
+                vision into reality!</p>
+            <div routerLink="/contact">
+                <button class="text-white bg-[#6366F1] text-lg font-medium px-10 py-2 rounded shadow md:shadow-md">HIRE
+                    NOW</button>
+            </div>
+        </div>
+        <div class="grid place-content-center justify-center">
+            <img src="../../../../../assets/angular.svg" alt="">
+        </div>
+    </div>
+</div>
+<app-explain-platform [explainPlatform]="explainPlatform" />
+<app-tech-stack [techStack]="techStack" />
+<app-tech-benefits [techBenefits]="techBenefits" />

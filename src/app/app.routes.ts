@@ -19,6 +19,7 @@ import { CloudServicesComponent } from './modules/services/cloud-services/cloud-
 import { AngularComponent } from './modules/technologies/frontend/angular/angular.component';
 import { NextjsComponent } from './modules/technologies/frontend/nextjs/nextjs.component';
 import { ReactComponent } from './modules/technologies/frontend/react/react.component';
+import { DotNetComponent } from './modules/technologies/backend/dot-net/dot-net.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -41,5 +42,6 @@ export const routes: Routes = [
     { path: 'react', component: ReactComponent },
     { path: 'angular', component: AngularComponent },
     { path: 'next', component: NextjsComponent },
+    { path: 'dot-net', component: DotNetComponent },
     { path: '**', component: HomeComponent },
 ];
