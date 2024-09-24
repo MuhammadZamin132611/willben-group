@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { HeadingDescriptionComponent } from "../sub-component/heading-description/heading-description.component";
-import { ExplainPlatformComponent } from "../sub-component/explain-platform/explain-platform.component";
 import { RouterLink } from '@angular/router';
-import { TechStackComponent } from "../sub-component/tech-stack/tech-stack.component";
-import { TechBenefitsComponent } from "../sub-component/tech-benefits/tech-benefits.component";
+import { ExplainPlatformComponent } from '../../sub-component/explain-platform/explain-platform.component';
+import { HeadingDescriptionComponent } from '../../sub-component/heading-description/heading-description.component';
+import { TechBenefitsComponent } from '../../sub-component/tech-benefits/tech-benefits.component';
+import { TechStackComponent } from '../../sub-component/tech-stack/tech-stack.component';
 
 @Component({
   selector: 'app-react',

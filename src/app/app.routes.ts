@@ -16,8 +16,9 @@ import { WebAppDevelopmentComponent } from './modules/services/web-app-developme
 import { SoftwareTestingComponent } from './modules/services/software-testing/software-testing.component';
 import { UiuxDesignComponent } from './modules/services/uiux-design/uiux-design.component';
 import { CloudServicesComponent } from './modules/services/cloud-services/cloud-services.component';
-import { ReactComponent } from './modules/technologies/react/react.component';
-import { AngularComponent } from './modules/technologies/angular/angular.component';
+import { AngularComponent } from './modules/technologies/frontend/angular/angular.component';
+import { NextjsComponent } from './modules/technologies/frontend/nextjs/nextjs.component';
+import { ReactComponent } from './modules/technologies/frontend/react/react.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -39,5 +40,6 @@ export const routes: Routes = [
     { path: 'cloud-services', component: CloudServicesComponent },
     { path: 'react', component: ReactComponent },
     { path: 'angular', component: AngularComponent },
+    { path: 'next', component: NextjsComponent },
     { path: '**', component: HomeComponent },
 ];

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { ExplainPlatformComponent } from '../sub-component/explain-platform/explain-platform.component';
-import { TechStackComponent } from '../sub-component/tech-stack/tech-stack.component';
-import { TechBenefitsComponent } from '../sub-component/tech-benefits/tech-benefits.component';
+import { ExplainPlatformComponent } from '../../sub-component/explain-platform/explain-platform.component';
+import { TechBenefitsComponent } from '../../sub-component/tech-benefits/tech-benefits.component';
+import { TechStackComponent } from '../../sub-component/tech-stack/tech-stack.component';
 
 @Component({
   selector: 'app-angular',

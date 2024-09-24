@@ -11,7 +11,7 @@ import { Component, Input } from '@angular/core';
 export class ExplainPlatformComponent {
 
   @Input() explainPlatform: Platform = {
-    image: ``,
+    image: `../../../../../assets/happyTarget.png`,
     heding: ``,
     paragraph: ``,
     aboutTechnologies: [
