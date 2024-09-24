@@ -21,6 +21,7 @@ import { NextjsComponent } from './modules/technologies/frontend/nextjs/nextjs.c
 import { ReactComponent } from './modules/technologies/frontend/react/react.component';
 import { DotNetComponent } from './modules/technologies/backend/dot-net/dot-net.component';
 import { NodeJsComponent } from './modules/technologies/backend/node-js/node-js.component';
+import { JavaComponent } from './modules/technologies/backend/java/java.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -45,5 +46,6 @@ export const routes: Routes = [
     { path: 'next', component: NextjsComponent },
     { path: 'dot-net', component: DotNetComponent },
     { path: 'nodejs', component: NodeJsComponent },
+    { path: 'java', component: JavaComponent },
     { path: '**', component: HomeComponent },
 ];
