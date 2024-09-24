@@ -23,6 +23,7 @@ import { DotNetComponent } from './modules/technologies/backend/dot-net/dot-net.
 import { NodeJsComponent } from './modules/technologies/backend/node-js/node-js.component';
 import { JavaComponent } from './modules/technologies/backend/java/java.component';
 import { NestJsComponent } from './modules/technologies/backend/nest-js/nest-js.component';
+import { IosComponent } from './modules/technologies/mobile/ios/ios.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -49,5 +50,6 @@ export const routes: Routes = [
     { path: 'nodejs', component: NodeJsComponent },
     { path: 'java', component: JavaComponent },
     { path: 'nest', component: NestJsComponent },
+    { path: 'ios', component: IosComponent },
     { path: '**', component: HomeComponent },
 ];
