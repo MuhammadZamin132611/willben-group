@@ -26,6 +26,7 @@ import { NestJsComponent } from './modules/technologies/backend/nest-js/nest-js.
 import { IosComponent } from './modules/technologies/mobile/ios/ios.component';
 import { AndroidComponent } from './modules/technologies/mobile/android/android.component';
 import { ReactNativeComponent } from './modules/technologies/mobile/react-native/react-native.component';
+import { FlutterComponent } from './modules/technologies/mobile/flutter/flutter.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -55,5 +56,6 @@ export const routes: Routes = [
     { path: 'ios', component: IosComponent },
     { path: 'android', component: AndroidComponent },
     { path: 'react-native', component: ReactNativeComponent },
+    { path: 'flutter', component: FlutterComponent },
     { path: '**', component: HomeComponent },
 ];
