@@ -127,7 +127,7 @@ export class NestJsComponent {
       },
       {
         subHeading: `Industry experts`,
-        subParagraph: `Rest assured, should your project evolve into greater technical complexity over time, the Senwell Group Private Limited team will adeptly adjust to meet the challenge.`
+        subParagraph: `Rest assured, should your project evolve into greater technical complexity over time, the Willben Group Private Limited team will adeptly adjust to meet the challenge.`
       },
     ]
   }

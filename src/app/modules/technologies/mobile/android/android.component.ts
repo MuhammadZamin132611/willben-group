@@ -16,7 +16,7 @@ export class AndroidComponent {
   explainPlatform = {
     image: `../../../../../assets/happyTarget.png`,
     heding: `Quick Launch, High-Quality Code.`,
-    paragraph: `Since almost half of all smartphone users use Android apps, the Android platform is very important for creating any kind of mobile application. Senwell Group Private Limited is a reputable Android app development business committed to making your online experience better by providing engaging mobile applications.`,
+    paragraph: `Since almost half of all smartphone users use Android apps, the Android platform is very important for creating any kind of mobile application. Willben Group Private Limited is a reputable Android app development business committed to making your online experience better by providing engaging mobile applications.`,
     aboutTechnologies: [
       {
         count: '',

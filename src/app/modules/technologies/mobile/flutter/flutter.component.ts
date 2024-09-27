@@ -16,7 +16,7 @@ export class FlutterComponent {
   explainPlatform = {
     image: `../../../../../assets/happyTarget.png`,
     heding: `Swift Deployment, Exemplary Code Quality.`,
-    paragraph: `Flutter is a programming language that primarily uses Dart to present customizable widgets. Senwell Group Private Limited offers a wide range of state-of-the-art app development services and is a leading Flutter development company. Using the unique features that Flutter provides, we quickly and skillfully create native interfaces that are of the highest caliber on all platforms.`,
+    paragraph: `Flutter is a programming language that primarily uses Dart to present customizable widgets. Willben Group Private Limited offers a wide range of state-of-the-art app development services and is a leading Flutter development company. Using the unique features that Flutter provides, we quickly and skillfully create native interfaces that are of the highest caliber on all platforms.`,
     aboutTechnologies: [
       {
         count: '',

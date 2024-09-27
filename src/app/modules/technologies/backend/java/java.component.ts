@@ -16,7 +16,7 @@ export class JavaComponent {
   explainPlatform = {
     image: `../../../../../assets/happyTarget.png`,
     heding: `We focus our knowledge on the problems facing your company.`,
-    paragraph: `Senwell Group Private Limited offers top-notch Java development services. We create scalable and reliable Java software to solve business problems and offer top-notch DevOps services that maximize benefits for a range of industry clients.`,
+    paragraph: `Willben Group Private Limited offers top-notch Java development services. We create scalable and reliable Java software to solve business problems and offer top-notch DevOps services that maximize benefits for a range of industry clients.`,
     aboutTechnologies: [
       {
         count: '',
@@ -126,7 +126,7 @@ export class JavaComponent {
       },
       {
         subHeading: `Industry experts`,
-        subParagraph: `Don't worry if your project becomes more technically complex over time—your Senwell Group Private Limited team will adapt accordingly.`
+        subParagraph: `Don't worry if your project becomes more technically complex over time—your Willben Group Private Limited team will adapt accordingly.`
       },
     ]
   }

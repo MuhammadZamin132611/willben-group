@@ -81,7 +81,7 @@ export class AngularComponent {
       {
         count: `01`,
         subHeading: `Quality first`,
-        subParagraph: `We always prefer code quality over deadlines and budget constraints.You'll always get the most out of your project plan when you work with Senwell Group Private Limited.`
+        subParagraph: `We always prefer code quality over deadlines and budget constraints.You'll always get the most out of your project plan when you work with Willben Group Private Limited.`
       },
       {
         count: `02`,

@@ -38,7 +38,7 @@ export class NodeJsComponent {
 
   techStack = {
     heading: `Our Technology Expertise`,
-    paragraph: `The expert developers at Senwell Group Private Limited can provide more than just Node.js development outsourcing. We have the ability to create high-quality software utilizing a variety of modern technologies, programming languages, and tools.`,
+    paragraph: `The expert developers at Willben Group Private Limited can provide more than just Node.js development outsourcing. We have the ability to create high-quality software utilizing a variety of modern technologies, programming languages, and tools.`,
     techImages: [
       {
         logo: `../../../../../assets/cSharp.svg`,

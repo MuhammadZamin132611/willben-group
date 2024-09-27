@@ -101,7 +101,7 @@ export class IosComponent {
       },
       {
         count: `05`,
-        subHeading: `When necessary, tailoring Senwell Group Private Limited and Company procedures`,
+        subHeading: `When necessary, tailoring Willben Group Private Limited and Company procedures`,
         subParagraph: `Our highly qualified staff not only works in unison with yours but also adds to the improvement of development procedures, guaranteeing maximum project output.`
       },
       {
