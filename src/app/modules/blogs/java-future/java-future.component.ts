@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 })
 export class JavaFutureComponent {
 
-  javaFuture = {
+  javaFuture:JavaFuture = {
     topHeading: `Is Java the Future of App Development?`,
     image: `../../../../assets/java_future.webp`,
     heading: `<b>Is Java the Future of App Development?</b>`,
@@ -106,4 +106,43 @@ export class JavaFutureComponent {
     ]
   }
 
+}
+
+interface JavaFuture{
+  topHeading:string;
+  image:string;
+  heading:string;
+  paragraph: Paragraph[];
+  subHeadingOne:string;
+  underList:UnderList[];
+  functionPara:string;
+  applicationPara:string;
+  techUnderList:TechUnderList[];
+  innerHeading:string;
+  innerParagraph:string;
+  innerSecondPara:string;
+  underListSecond:UnderListSecond[];
+  lastParagraph:string;
+  technologies:Technologies[];
+}
+
+interface Paragraph{
+  subPara:string;
+}
+
+interface UnderList{
+  list:string;
+}
+
+interface TechUnderList{
+  techList:string;
+}
+
+interface UnderListSecond{
+  secondList:string; 
+}
+
+interface Technologies{
+  tech:string;
+  para:string;
 }
