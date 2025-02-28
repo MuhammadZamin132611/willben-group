@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="52" viewBox="0 0 52 52">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1929" data-name="Rectangle 1929" width="52" height="52" transform="translate(570 763)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_11" data-name="Mask Group 11" transform="translate(-570 -763)" clip-path="url(#clip-path)">
+    <g id="Vue.js_Logo_2" transform="translate(554.841 828.731)">
+      <g id="Group_15822" data-name="Group 15822" transform="translate(15.159 -62.248)">
+        <path id="Path_19653" data-name="Path 19653" d="M0,0-6,10.858-12.009,0H-32L-6,47.015,20,0Z" transform="translate(32.004)" fill="#41b883"/>
+      </g>
+      <g id="Group_15823" data-name="Group 15823" transform="translate(25.559 -62.248)">
+        <path id="Path_19654" data-name="Path 19654" d="M0,0-6,10.4l-6-10.4h-9.6L-6,27.02,9.6,0Z" transform="translate(21.604)" fill="#34495e"/>
+      </g>
+    </g>
+  </g>
+</svg>

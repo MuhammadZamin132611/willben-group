@@ -1,0 +1,32 @@
+{
+  "routes": [
+    "/",
+    "/about_us",
+    "/android",
+    "/angular",
+    "/application-development",
+    "/benifit",
+    "/blog",
+    "/cloud-services",
+    "/contact",
+    "/customer-software-developmen",
+    "/dot-net",
+    "/flutter",
+    "/ios",
+    "/java",
+    "/java-future",
+    "/most-popular",
+    "/nest",
+    "/next",
+    "/nodejs",
+    "/portfolio",
+    "/react",
+    "/react-native",
+    "/react-popular",
+    "/saas-development-service",
+    "/software-testing",
+    "/softwareproduct",
+    "/uiux-design",
+    "/web-development"
+  ]
+}

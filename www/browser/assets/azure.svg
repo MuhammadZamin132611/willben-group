@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+  <g id="Group_18599" data-name="Group 18599" transform="translate(-563 -6508)">
+    <g id="Rectangle_4488" data-name="Rectangle 4488" transform="translate(563 6508)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0.004">
+      <rect width="70" height="70" stroke="none"/>
+      <rect x="0.5" y="0.5" width="69" height="69" fill="none"/>
+    </g>
+    <g id="layer1" transform="translate(1146.931 6333.146)">
+      <g id="layer1-1" transform="translate(-582.93 183.854)">
+        <path id="path21" d="M9.174,45.651c7.94-1.522,14.5-2.781,14.573-2.8l.137-.032-7.5-9.673c-4.123-5.32-7.5-9.694-7.5-9.719,0-.048,7.74-23.172,7.784-23.255.015-.028,5.282,9.839,12.768,23.916A143.716,143.716,0,0,0,46.371,48.417v0H18.561l-23.822,0L9.174,45.651Zm39-2.9c.008-.026-.012.038,0,0ZM-19.415,42.7c0-.014,3.532-6.666,7.849-14.782l7.849-14.757L5.429,4.833C10.46.253,14.59-3.5,14.606-3.507a1.839,1.839,0,0,1-.147.4L4.527,20.007l-9.755,22.7-7.094.01c-3.9.005-7.094,0-7.094-.015Z" transform="translate(19.415 3.507)" fill="#0089d6"/>
+      </g>
+    </g>
+  </g>
+</svg>
