@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { MaterialModule } from '../material.module';
 import { RouterLink } from '@angular/router';
 import { NgClass, NgIf, } from '@angular/common';
-import { FlatTreeControl } from '@angular/cdk/tree';
-import { MatTreeFlatDataSource, MatTreeFlattener } from '@angular/material/tree';
+import { FlatTreeControl, NestedTreeControl } from '@angular/cdk/tree';
+import { MatTreeFlatDataSource, MatTreeFlattener, MatTreeNestedDataSource } from '@angular/material/tree';
 
 @Component({
   selector: 'app-header',
@@ -18,36 +18,45 @@ export class HeaderComponent {
     this.isPopupVisibleLanguage = !this.isPopupVisibleLanguage
   }
 
+  // constructor() {
+  //   this.dataSource.data = TREE_DATA;
+  //   console.log(TREE_DATA)
+  // }
+
+
+  // treeControl = new FlatTreeControl<ExampleFlatNode>(
+  //   node => node.lavel,
+  //   node => node.expandable,
+  // );
+
+  // private _transformer = (node: FoodNode, level: number) => {
+  //   return {
+  //     expandable: !!node.children && node.children.length > 0,
+  //     name: node.name,
+  //     lavel: level,
+
+  //   };
+  // }
+
+  // treeFlattener = new MatTreeFlattener(
+  //   this._transformer,
+  //   node => node.lavel,
+  //   node => node.expandable,
+  //   node => node.children
+  // );
+
+  // dataSource = new MatTreeFlatDataSource(this.treeControl, this.treeFlattener);
+
+  // hasChild = (_: number, node: ExampleFlatNode) => node.expandable;
+
+  treeControl = new NestedTreeControl<FoodNode>((node) => node.children);
+  dataSource = new MatTreeNestedDataSource<FoodNode>();
+
   constructor() {
     this.dataSource.data = TREE_DATA;
-    console.log(TREE_DATA)
   }
 
-
-  treeControl = new FlatTreeControl<ExampleFlatNode>(
-    node => node.lavel,
-    node => node.expandable,
-  );
-
-  private _transformer = (node: FoodNode, level: number) => {
-    return {
-      expandable: !!node.children && node.children.length > 0,
-      name: node.name,
-      lavel: level,
-
-    };
-  }
-
-  treeFlattener = new MatTreeFlattener(
-    this._transformer,
-    node => node.lavel,
-    node => node.expandable,
-    node => node.children
-  );
-
-  dataSource = new MatTreeFlatDataSource(this.treeControl, this.treeFlattener);
-
-  hasChild = (_: number, node: ExampleFlatNode) => node.expandable;
+  hasChild = (_: number, node: FoodNode) => !!node.children && node.children.length > 0;
 }
 
 interface FoodNode {
@@ -65,7 +74,7 @@ interface ExampleFlatNode {
 const TREE_DATA: FoodNode[] = [
   {
     name: 'Home',
-    // link: '/',
+    link: '/react',
     // children: [{name: 'Apple'}, {name: 'Banana'}, {name: 'Fruit loops'}],
   },
   {
@@ -73,7 +82,7 @@ const TREE_DATA: FoodNode[] = [
     children: [
       {
         name: 'Portfolio',
-        // link: '/',
+        link: '/angular',
       },
       {
         name: 'About Us',
