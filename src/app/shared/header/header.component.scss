@@ -1,3 +1,19 @@
-.headerIndex{
-    z-index: 999;
+.headerIndex {
+    z-index: 99;
+}
+
+.popupIndex{
+    z-index: 100;
+}
+
+
+div.popup-container {
+    width: 0;
+    /* Initially hidden */
+    transition: width 0.5s ease-out;
+}
+
+div.popup-container.active {
+    width: 75%;
+    /* Adjust as needed */
 }

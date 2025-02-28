@@ -1,140 +1,163 @@
-<div class="relative hidden md:block">
-    <div class="bg-white shadow-xl p-5 headerIndex fixed top-0 left-0 right-0 w-full">
+<div class="relative ">
+    <div class="bg-white/30 shadow-xl backdrop-blur-sm p-5 headerIndex fixed top-0 left-0 right-0 w-full">
         <div class="flex justify-between gap-5">
-            <div class="w-1/4 cursor-pointer" routerLink="/">
-                <span class="text-lg font-medium text-[#2460A6]">WILLBEN GROUP PRIVATE LIMITED</span><br>
+            <div class="w-3/4 md:w-1/4 cursor-pointer" routerLink="/">
+                <span class="text-sm md:text-lg font-medium text-[#2460A6]">WILLBEN GROUP PRIVATE LIMITED</span><br>
                 <span class="text-[10px] italic text-[#566573]">Empowerd by Innovation...</span>
 
             </div>
-            <div class="w-3/4 grid justify-end">
-                <ul class="list-none p-2 flex cursor-pointer">
-                    <li class="relative group" routerLink="/">
-                        <span class="py-2 px-4 text-black hover:text-[#0084ff]">
-                            HOME
-                        </span>
-                    </li>
-                    <li class="relative group">
-                        <span class="py-2 px-4 text-black hover:text-[#0084ff]">
-                            COMPANY
-                        </span>
-                        <ul class="absolute left-0 mt-1 w-48 text-[#7D828C] bg-white border border-gray-200 rounded shadow-lg hidden 
+            <div class="hidden md:block">
+                <div class="w-1/4 md:w-3/4 grid justify-end">
+                    <ul class="list-none p-2 flex cursor-pointer">
+                        <li class="relative group" routerLink="/">
+                            <span class="py-2 px-4 text-black hover:text-[#0084ff]">
+                                HOME
+                            </span>
+                        </li>
+                        <li class="relative group">
+                            <span class="py-2 px-4 text-black hover:text-[#0084ff]">
+                                COMPANY
+                            </span>
+                            <ul class="absolute left-0 mt-1 w-48 text-[#7D828C] bg-white border border-gray-200 rounded shadow-lg hidden 
                     group-hover:block">
-                            <li routerLink="/portfolio" class="py-2 px-4 ">
-                                Portfolio
-                            </li>
-                            <li routerLink="/about_us" class="py-2 px-4 hover:text-[#0084ff]">
-                                About Us
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="relative group">
-                        <span class="py-2 px-4 text-black hover:text-[#0084ff]">
-                            SERVICES
-                        </span>
-                        <ul class="absolute whitespace-nowrap left-0 mt-1 w-64 text-[#7D828C] bg-white border border-gray-200 rounded shadow-lg hidden 
+                                <li routerLink="/portfolio" class="py-2 px-4 ">
+                                    Portfolio
+                                </li>
+                                <li routerLink="/about_us" class="py-2 px-4 hover:text-[#0084ff]">
+                                    About Us
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="relative group">
+                            <span class="py-2 px-4 text-black hover:text-[#0084ff]">
+                                SERVICES
+                            </span>
+                            <ul class="absolute whitespace-nowrap left-0 mt-1 w-64 text-[#7D828C] bg-white border border-gray-200 rounded shadow-lg hidden 
                         group-hover:block">
-                            <li routerLink="/softwareproduct" class="py-2 px-4 hover:text-[#0084ff]">
-                                Software Product Development
-                            </li>
-                            <li routerLink="/customer-software-developmen" class="py-2 px-4 hover:text-[#0084ff]">
-                                Software Development
-                            </li>
-                            <li routerLink="/saas-development-service" class="py-2 px-4 hover:text-[#0084ff]">
-                                SaaS Development
-                            </li>
-                            <li routerLink="/application-development" class="py-2 px-4 hover:text-[#0084ff]">
-                                Application Development
-                            </li>
-                            <li routerLink="/web-development" class="py-2 px-4 hover:text-[#0084ff]">
-                                Web App Development
-                            </li>
-                            <li routerLink="/software-testing" class="py-2 px-4 hover:text-[#0084ff]">
-                                Software Testing
-                            </li>
-                            <li routerLink="/uiux-design" class="py-2 px-4 hover:text-[#0084ff]">
-                                UI/UX Design
-                            </li>
-                            <li routerLink="/cloud-services" class="py-2 px-4 hover:text-[#0084ff]">
-                                Cloud
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="relative group">
-                        <span class="py-2 px-4 text-black hover:text-[#0084ff]">
-                            TECHNOLOGIES
-                        </span>
-                        <ul class="absolute left-0 mt-1 w-96 text-[#7D828C]   bg-white border border-gray-200 rounded shadow-lg hidden 
+                                <li routerLink="/softwareproduct" class="py-2 px-4 hover:text-[#0084ff]">
+                                    Software Product Development
+                                </li>
+                                <li routerLink="/customer-software-developmen" class="py-2 px-4 hover:text-[#0084ff]">
+                                    Software Development
+                                </li>
+                                <li routerLink="/saas-development-service" class="py-2 px-4 hover:text-[#0084ff]">
+                                    SaaS Development
+                                </li>
+                                <li routerLink="/application-development" class="py-2 px-4 hover:text-[#0084ff]">
+                                    Application Development
+                                </li>
+                                <li routerLink="/web-development" class="py-2 px-4 hover:text-[#0084ff]">
+                                    Web App Development
+                                </li>
+                                <li routerLink="/software-testing" class="py-2 px-4 hover:text-[#0084ff]">
+                                    Software Testing
+                                </li>
+                                <li routerLink="/uiux-design" class="py-2 px-4 hover:text-[#0084ff]">
+                                    UI/UX Design
+                                </li>
+                                <li routerLink="/cloud-services" class="py-2 px-4 hover:text-[#0084ff]">
+                                    Cloud
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="relative group">
+                            <span class="py-2 px-4 text-black hover:text-[#0084ff]">
+                                TECHNOLOGIES
+                            </span>
+                            <ul class="absolute left-0 mt-1 w-96 text-[#7D828C]   bg-white border border-gray-200 rounded shadow-lg hidden 
                     group-hover:block">
-                            <div class="flex justify-between">
-                                <div>
-                                    <li class="py-2 px-4 text-black text-sm tracking-wider font-semibold">
-                                        FrontEnd
-                                    </li>
-                                    <li routerLink="/react" class="py-2 px-4 hover:text-[#0084ff]">
-                                        React
-                                    </li>
-                                    <li routerLink="/angular" class="py-2 px-4 hover:text-[#0084ff]">
-                                        Angular
-                                    </li>
-                                    <li routerLink="/next" class="py-2 px-4 hover:text-[#0084ff]">
-                                        Next Js
-                                    </li>
+                                <div class="flex justify-between">
+                                    <div>
+                                        <li class="py-2 px-4 text-black text-sm tracking-wider font-semibold">
+                                            FrontEnd
+                                        </li>
+                                        <li routerLink="/react" class="py-2 px-4 hover:text-[#0084ff]">
+                                            React
+                                        </li>
+                                        <li routerLink="/angular" class="py-2 px-4 hover:text-[#0084ff]">
+                                            Angular
+                                        </li>
+                                        <li routerLink="/next" class="py-2 px-4 hover:text-[#0084ff]">
+                                            Next Js
+                                        </li>
+                                    </div>
+                                    <div>
+                                        <li class="py-2 px-4 text-black text-sm tracking-wider font-semibold">
+                                            Backend
+                                        </li>
+                                        <li routerLink="/dot-net" class="py-2 px-4 hover:text-[#0084ff]">
+                                            .Net
+                                        </li>
+                                        <li routerLink="/nodejs" class="py-2 px-4 hover:text-[#0084ff]">
+                                            Node Js
+                                        </li>
+                                        <li routerLink="/java" class="py-2 px-4 hover:text-[#0084ff]">
+                                            Java
+                                        </li>
+                                        <li routerLink="/nest" class="py-2 px-4 hover:text-[#0084ff]">
+                                            Nest Js
+                                        </li>
+                                    </div>
+                                    <div>
+                                        <li class="py-2 px-4 text-black text-sm tracking-wider font-semibold">
+                                            Mobile
+                                        </li>
+                                        <li routerLink="/ios" class="py-2 px-4 hover:text-[#0084ff]">
+                                            iOS
+                                        </li>
+                                        <li routerLink="/android" class="py-2 px-4 hover:text-[#0084ff]">
+                                            Android
+                                        </li>
+                                        <li routerLink="/react-native" class="py-2 px-4 hover:text-[#0084ff]">
+                                            React Native
+                                        </li>
+                                        <li routerLink="/flutter" class="py-2 px-4 hover:text-[#0084ff]">
+                                            Flutter
+                                        </li>
+                                    </div>
                                 </div>
-                                <div>
-                                    <li class="py-2 px-4 text-black text-sm tracking-wider font-semibold">
-                                        Backend
-                                    </li>
-                                    <li routerLink="/dot-net" class="py-2 px-4 hover:text-[#0084ff]">
-                                        .Net
-                                    </li>
-                                    <li routerLink="/nodejs" class="py-2 px-4 hover:text-[#0084ff]">
-                                        Node Js
-                                    </li>
-                                    <li routerLink="/java" class="py-2 px-4 hover:text-[#0084ff]">
-                                        Java
-                                    </li>
-                                    <li routerLink="/nest" class="py-2 px-4 hover:text-[#0084ff]">
-                                        Nest Js
-                                    </li>
-                                </div>
-                                <div>
-                                    <li class="py-2 px-4 text-black text-sm tracking-wider font-semibold">
-                                        Mobile
-                                    </li>
-                                    <li routerLink="/ios" class="py-2 px-4 hover:text-[#0084ff]">
-                                        iOS
-                                    </li>
-                                    <li routerLink="/android" class="py-2 px-4 hover:text-[#0084ff]">
-                                        Android
-                                    </li>
-                                    <li routerLink="/react-native" class="py-2 px-4 hover:text-[#0084ff]">
-                                        React Native
-                                    </li>
-                                    <li routerLink="/flutter" class="py-2 px-4 hover:text-[#0084ff]">
-                                        Flutter
-                                    </li>
-                                </div>
-                            </div>
 
-                        </ul>
-                    </li>
-                    <li class="relative group" routerLink="/blog">
-                        <span class="py-2 px-4 text-black hover:text-[#0084ff]">
-                            BLOGS
-                        </span>
-                    </li>
-                    <li class="relative group">
-                        <span class="py-2 px-4 text-black hover:text-[#0084ff]">
-                            CAREERS
-                        </span>
-                    </li>
-                    <li class="relative group" routerLink="/contact">
-                        <span class="py-2 px-4 text-black hover:text-[#0084ff]">
-                            CONTACT
-                        </span>
-                    </li>
-                </ul>
+                            </ul>
+                        </li>
+                        <li class="relative group" routerLink="/blog">
+                            <span class="py-2 px-4 text-black hover:text-[#0084ff]">
+                                BLOGS
+                            </span>
+                        </li>
+                        <li class="relative group">
+                            <span class="py-2 px-4 text-black hover:text-[#0084ff]">
+                                CAREERS
+                            </span>
+                        </li>
+                        <li class="relative group" routerLink="/contact">
+                            <span class="py-2 px-4 text-black hover:text-[#0084ff]">
+                                CONTACT
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block md:hidden">
+                <button (click)="togglePopupLanguage()" mat-icon-button>
+                    @if(isPopupVisibleLanguage){
+                        <mat-icon>close</mat-icon>
+                    }@else {
+                        <mat-icon>menu</mat-icon>
+                    }
+                </button>
             </div>
         </div>
     </div>
 </div>
+<!-- <div (click)="togglePopupLanguage()" *ngIf=" isPopupVisibleLanguage"
+    class="fixed w-full top-0 h-screen bg-black bg-opacity-25 z-30">
+</div> -->
+
+<!-- <div class="rounded-t-2xl z-50 popup-container fixed overflow-hidden bottom-0 h-0 w-full bg-white ease-out duration-700 drop-shadow-lg blur-50"
+    [ngClass]="{ 'active': isPopupVisibleLanguage }">
+</div> -->
+
+<div class="rounded-r-2xl popupIndex fixed top-0 left-0 popup-container h-full w-0 bg-[#efefef] z-50 shadow-lg ease-out duration-700"
+    [ngClass]="{ 'active': isPopupVisibleLanguage }">
+</div>
+
