@@ -74,7 +74,7 @@ interface ExampleFlatNode {
 const TREE_DATA: FoodNode[] = [
   {
     name: 'Home',
-    link: '/react',
+    link: '/',
     // children: [{name: 'Apple'}, {name: 'Banana'}, {name: 'Fruit loops'}],
   },
   {
@@ -82,11 +82,11 @@ const TREE_DATA: FoodNode[] = [
     children: [
       {
         name: 'Portfolio',
-        link: '/angular',
+        link: '/portfolio',
       },
       {
         name: 'About Us',
-        // link: '/',
+        link: '/about_us',
       }
     ],
   },
@@ -95,31 +95,35 @@ const TREE_DATA: FoodNode[] = [
     children: [
       {
         name: 'Software Product Development',
-        // link: '/',
+        link: '/softwareproduct',
       },
       {
         name: 'Software Development',
-        // link: '/',
+        link: '/customer-software-developmen',
       },
       {
         name: 'SaaS Development',
-        // link: '/',
+        link: '/saas-development-service',
       },
       {
         name: 'Application Development',
-        // link: '/',
+        link: '/application-development',
       },
       {
         name: 'Web App Development',
-        // link: '/',
+        link: '/web-development',
       },
       {
         name: 'Software Testing',
-        // link: '/',
+        link: '/software-testing',
       },
       {
         name: 'UI/UX Design',
-        // link: '/',
+        link: '/uiux-design',
+      },
+      {
+        name: 'Cloud Services',
+        link: '/cloud-services',
       },
     ],
   },
@@ -131,15 +135,15 @@ const TREE_DATA: FoodNode[] = [
         children: [
           {
             name: 'React',
-            // link: '/',
+            link: '/react',
           },
           {
             name: 'Angular',
-            // link: '/',
+            link: '/angular',
           },
           {
             name: 'Next Js',
-            // link: '/',
+            link: '/next',
           },
         ],
       },
@@ -148,44 +152,40 @@ const TREE_DATA: FoodNode[] = [
         children: [
           {
             name: '.Net',
-            // link: '/',
+            link: '/dot-net',
           },
           {
             name: 'Node Js',
-            // link: '/',
+            link: '/nodejs',
           },
           {
             name: 'Java',
-            // link: '/',
+            link: '/java',
           },
           {
             name: 'Nest Js',
-            // link: '/',
+            link: '/nest',
           },
         ],
       },
       {
-        name: 'Mobild',
+        name: 'Mobile',
         children: [
           {
-            name: 'Mobile',
-            // link: '/',
-          },
-          {
-            name: 'iOS',
-            // link: '/',
+            name: 'IOS',
+            link: '/ios',
           },
           {
             name: 'Android',
-            // link: '/',
+            link: '/android',
           },
           {
             name: 'React Native',
-            // link: '/',
+            link: '/react-native',
           },
           {
             name: 'Flutter',
-            // link: '/',
+            link: '/flutter',
           },
         ],
       },
@@ -193,15 +193,15 @@ const TREE_DATA: FoodNode[] = [
   },
   {
     name: 'Blog',
-    // link: '/',
+    link: '/blog',
   },
-  {
-    name: 'Careers',
-    // link: '/',
-  },
+  // {
+  //   name: 'Careers',
+  //   // link: '/',
+  // },
   {
     name: 'Contact',
-    // link: '/',
+    link: '/contact',
   },
   // {
   //   name: 'Vegetables',
