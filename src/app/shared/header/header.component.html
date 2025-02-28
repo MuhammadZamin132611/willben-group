@@ -140,9 +140,9 @@
             <div class="block md:hidden">
                 <button (click)="togglePopupLanguage()" mat-icon-button>
                     @if(isPopupVisibleLanguage){
-                        <mat-icon>close</mat-icon>
+                    <mat-icon>close</mat-icon>
                     }@else {
-                        <mat-icon>menu</mat-icon>
+                    <mat-icon>menu</mat-icon>
                     }
                 </button>
             </div>
@@ -157,7 +157,22 @@
     [ngClass]="{ 'active': isPopupVisibleLanguage }">
 </div> -->
 
-<div class="rounded-r-2xl popupIndex fixed top-0 left-0 popup-container h-full w-0 bg-[#efefef] z-50 shadow-lg ease-out duration-700"
+<div *ngIf="isPopupVisibleLanguage" class="rounded-r-2xl overflow-auto popupIndex fixed top-0 left-0 popup-container h-full w-0 bg-[#efefef] z-50 shadow-lg ease-out duration-700"
     [ngClass]="{ 'active': isPopupVisibleLanguage }">
+    <div >
+        <mat-tree style="padding: 5px; background-color: #efefef;" [treeControl]="treeControl" [dataSource]="dataSource">
+            <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
+                <button mat-icon-button disabled></button>
+                {{node.name}}
+            </mat-tree-node>
+            <mat-tree-node *matTreeNodeDef="let node; when: hasChild" matTreeNodePadding>
+                <button mat-icon-button matTreeNodeToggle [attr.atria-label]="'Toggle'+'node.name'">
+                    <mat-icon>
+                        {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+                    </mat-icon>
+                </button>
+                {{node.name}} 
+            </mat-tree-node>
+        </mat-tree>
+    </div>
 </div>
-
