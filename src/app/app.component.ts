@@ -17,32 +17,32 @@ export class AppComponent implements OnInit {
   title = 'willben-group';
 
   constructor(private router: Router){
-    ScreenOrientation.lock({ orientation: 'portrait' });
+    // ScreenOrientation.lock({ orientation: 'portrait' });
   }
 
   ngOnInit(): void {
-    this.router.events.subscribe(event => {
-      if (event instanceof NavigationEnd) {
-        window.scrollTo(0, 0);
-      }
-    });
+    // this.router.events.subscribe(event => {
+    //   if (event instanceof NavigationEnd) {
+    //     window.scrollTo(0, 0);
+    //   }
+    // });
   }
 
-  private setStatusBarColor() {
-    const body = document.getElementsByTagName('body')[0];
-    const observer = new MutationObserver(() => {
-      if (body.classList.contains('ion-color-light')) {
-        StatusBar.setStyle({ style: Style.Dark });
-      } else {
-        StatusBar.setStyle({ style: Style.Light });
-      }
-    });
+  // private setStatusBarColor() {
+  //   const body = document.getElementsByTagName('body')[0];
+  //   const observer = new MutationObserver(() => {
+  //     if (body.classList.contains('ion-color-light')) {
+  //       StatusBar.setStyle({ style: Style.Dark });
+  //     } else {
+  //       StatusBar.setStyle({ style: Style.Light });
+  //     }
+  //   });
 
-    observer.observe(body, {
-      attributes: true,
-      attributeFilter: ['class'],
-      childList: false,
-      characterData: false,
-    });
-  }
+  //   observer.observe(body, {
+  //     attributes: true,
+  //     attributeFilter: ['class'],
+  //     childList: false,
+  //     characterData: false,
+  //   });
+  // }
 }
