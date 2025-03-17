@@ -1,1 +1,47 @@
-<p>portfolio works!</p>
+<section class=" md:px-20 md:py-16 p-5">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-gray-100 p-4 rounded-lg">
+        <div class="order-2 md:order-1">
+            <div class="">
+                <h1 class="text-2xl font-semibold text-black">Muhammad Zamin</h1>
+                <p class="text-xl font-normal text-[#7f7f7f]">zamin.gmail.com</p>
+                <address>Building Number, Area, Distirict, State - 110003</address>
+            </div>
+        </div>
+        <div class="order-1 md:order-2">
+            <!-- <div class="flex justify-center place-items-center sticky top-0 ">
+                <div class="h-40 w-40 rounded-full bg-[#efefef] p-1">
+                    <img class="rounded-full h-full w-full" src="/assets/chilli_powder.jpg" alt="image">
+                    <div class="relative">
+                    <div class="absolute bottom-[1px] right-0">
+                        <input type="file" #fileInput accept="image/*" style="display: none;" (change)="onFileSelected($event)">
+                            <button (click)="fileInput.click()" style="display: flex; justify-items: center; place-items: center;" mat-icon-button>
+                                <mat-icon style="font-size: 2rem;">add</mat-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="flex justify-center place-items-center sticky top-0">
+                <div class="h-40 w-40 rounded-full bg-white p-1 relative">
+                    <!-- Display Selected Image -->
+                     @if(!selectedImage){
+                         <div class="grid h-40 justify-center place-items-center text-5xl font-bold">M</div>
+                     }
+                     @else{
+                         <img class="rounded-full h-full w-full" [src]="selectedImage"
+                         alt="Selected Image">
+                     }
+                    <!-- Upload Button -->
+                    <div class="absolute bottom-[1px] right-0">
+                        <input type="file" #fileInput accept="image/*" style="display: none;"
+                            (change)="onFileSelected($event)">
+                        <button (click)="fileInput.click()" mat-icon-button class="flex justify-center items-center">
+                            <mat-icon>add</mat-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
