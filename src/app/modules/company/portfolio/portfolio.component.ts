@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { MaterialModule } from '../../../shared/material.module';
+import { Camera, CameraResultType, CameraSource } from '@capacitor/camera';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [MaterialModule],
+  imports: [MaterialModule, NgIf],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })
@@ -31,17 +33,17 @@ export class PortfolioComponent {
     }
   }
 
-  // selectedImage1: string | ArrayBuffer | null = null;
-  // async upload() {
-  //   const file = await this.imageService.selectImage();
-  //   // this.selectedImage1 = file;
-  //   console.log(file);
-  //   if (file) {
-  //     this.imageService.uploadImage(file).then(() => {
-  //       console.log('Upload successful');
-  //     }).catch(err => {
-  //       console.error('Upload failed', err);
-  //     });
-  //   }
-  // }
+  capturedImage: string | undefined;
+
+  async openCamera() {
+    const image = await Camera.getPhoto({
+      quality: 90,
+      allowEditing: false,
+      resultType: CameraResultType.DataUrl,
+      source: CameraSource.Camera, // Opens phone camera
+    });
+
+    this.capturedImage = image.dataUrl;
+  }
+
 }

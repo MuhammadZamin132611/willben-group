@@ -24,13 +24,12 @@
             <div class="flex justify-center place-items-center sticky top-0">
                 <div class="h-40 w-40 rounded-full bg-white p-1 relative">
                     <!-- Display Selected Image -->
-                     @if(!selectedImage){
-                         <div class="grid h-40 justify-center place-items-center text-5xl font-bold">M</div>
-                     }
-                     @else{
-                         <img class="rounded-full h-full w-full" [src]="selectedImage"
-                         alt="Selected Image">
-                     }
+                    @if(!selectedImage){
+                    <div class="grid h-40 justify-center place-items-center text-5xl font-bold">M</div>
+                    }
+                    @else{
+                    <img class="rounded-full h-full w-full" [src]="selectedImage" alt="Selected Image">
+                    }
                     <!-- Upload Button -->
                     <div class="absolute bottom-[1px] right-0">
                         <input type="file" #fileInput accept="image/*" style="display: none;"
@@ -45,3 +44,6 @@
         </div>
     </div>
 </section>
+
+<button (click)="openCamera()">Open Camera</button>
+<img *ngIf="capturedImage" [src]="capturedImage" alt="Captured Image" />
