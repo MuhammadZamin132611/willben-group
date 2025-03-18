@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { MaterialModule } from '../../../shared/material.module';
-import { ImageUploadService } from '../../../shared/image-upload.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -10,7 +9,6 @@ import { ImageUploadService } from '../../../shared/image-upload.service';
   styleUrl: './portfolio.component.scss'
 })
 export class PortfolioComponent {
-  constructor(private imageService: ImageUploadService) { }
 
   selectedImage: string | ArrayBuffer | null = null;
 
