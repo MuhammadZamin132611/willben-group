@@ -29,7 +29,7 @@ import { ReactNativeComponent } from './modules/technologies/mobile/react-native
 import { FlutterComponent } from './modules/technologies/mobile/flutter/flutter.component';
 
 export const routes: Routes = [
-    { path: '', component: HomeComponent },
+    { path: 'home', component: HomeComponent },
     { path: 'contact', component: ContactComponent },
     { path: 'blog', component: BlogComponent },
     { path: 'benifit', component: BenefitsApiImplementingComponent },
@@ -57,5 +57,6 @@ export const routes: Routes = [
     { path: 'android', component: AndroidComponent },
     { path: 'react-native', component: ReactNativeComponent },
     { path: 'flutter', component: FlutterComponent },
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: '**', component: HomeComponent },
 ];

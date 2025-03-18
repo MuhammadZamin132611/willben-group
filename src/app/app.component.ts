@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
 
   handleBackButton() {
     CapacitorApp.addListener('backButton', ({ canGoBack }) => {
-      if (this.router.url !== '/') {
+      if (this.router.url !== '/home') {
         // Go back using Angular routing
         this.location.back();
       } else {

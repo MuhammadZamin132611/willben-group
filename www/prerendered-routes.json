@@ -1,6 +1,5 @@
 {
   "routes": [
-    "/",
     "/about_us",
     "/android",
     "/angular",
@@ -12,6 +11,7 @@
     "/customer-software-developmen",
     "/dot-net",
     "/flutter",
+    "/home",
     "/ios",
     "/java",
     "/java-future",
