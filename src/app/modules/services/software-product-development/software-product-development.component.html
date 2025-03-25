@@ -100,10 +100,10 @@
             We go beyond set standards and norms to meet expectations</p>
     </div>
     <div class="grid place-content-center justify-center">
-        <div class="flex gap-10 text-base tracking-wide">
-            <p (click)="viewFonted()">FRONTED</p>
-            <p (click)="viewBackend()">BACKEND</p>
-            <p (click)="viewMobile()">MOBILE</p>
+        <div class="flex gap-10 text-base tracking-wide cursor-pointer">
+            <p (click)="viewFonted()" [ngClass]="{'border-b-2 border-gray-600': forntend}">FRONTED</p>
+            <p (click)="viewBackend()" [ngClass]="{'border-b-2 border-gray-600': backend}">BACKEND</p>
+            <p (click)="viewMobile()" [ngClass]="{'border-b-2 border-gray-600': mobile}">MOBILE</p>
         </div>
     </div>
     @if(forntend){

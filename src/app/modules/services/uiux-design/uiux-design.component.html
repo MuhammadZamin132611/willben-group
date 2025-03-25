@@ -9,10 +9,10 @@
     </div>
     <div class="grid place-content-center justify-center">
         <div class="flex gap-10 text-base tracking-wide cursor-pointer">
-            <p (click)="viewLanguageAndTechnologies()">LANGUAGE & TECHNOLOGIES</p>
-            <p (click)="viewWireframeAndPrototype()">WIREFRAME & PROTOTYPE</p>
-            <p (click)="viewUiuxvisualDesign()">UI/UX (VISUAL DESIGNS)</p>
-            <p (click)="viewCollaboration()">COLLABORATION</p>
+            <p (click)="viewLanguageAndTechnologies()" [ngClass]="{'border-b-2 border-gray-600': languageAndTechnologies}">LANGUAGE & TECHNOLOGIES</p>
+            <p (click)="viewWireframeAndPrototype()" [ngClass]="{'border-b-2 border-gray-600': wireframeAndPrototype}">WIREFRAME & PROTOTYPE</p>
+            <p (click)="viewUiuxvisualDesign()" [ngClass]="{'border-b-2 border-gray-600': uiuxvisualDesign}">UI/UX (VISUAL DESIGNS)</p>
+            <p (click)="viewCollaboration()" [ngClass]="{'border-b-2 border-gray-600': collaboration}">COLLABORATION</p>
         </div>
     </div>
     @if(languageAndTechnologies){

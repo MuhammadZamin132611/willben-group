@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { OurBlogComponent } from '../../blogs/blog/our-blog/our-blog.component';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-customer-software-development',
   standalone: true,
-  imports: [OurBlogComponent],
+  imports: [OurBlogComponent, NgClass],
   templateUrl: './customer-software-development.component.html',
   styleUrl: './customer-software-development.component.scss'
 })

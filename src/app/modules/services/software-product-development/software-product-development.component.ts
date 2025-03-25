@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { OurBlogComponent } from "../../blogs/blog/our-blog/our-blog.component";
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-software-product-development',
   standalone: true,
-  imports: [OurBlogComponent],
+  imports: [OurBlogComponent, NgClass],
   templateUrl: './software-product-development.component.html',
   styleUrl: './software-product-development.component.scss'
 })

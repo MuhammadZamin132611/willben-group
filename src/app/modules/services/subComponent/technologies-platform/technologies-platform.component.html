@@ -6,10 +6,10 @@
             We go beyond set standards and norms to meet expectations</p>
     </div>
     <div class="grid place-content-center justify-center">
-        <div class="flex gap-10 text-base tracking-wide">
-            <p (click)="viewLANGUAGES()">LANGUAGES</p>
-            <p (click)="viewDATABASE()">DATABASE</p>
-            <p (click)="viewFRAMEWORKS()">FRAMEWORKS</p>
+        <div class="flex gap-10 text-base tracking-wide cursor-pointer">
+            <p (click)="viewLANGUAGES()" [ngClass]="{'border-b-2 border-gray-600': languages}">LANGUAGES</p>
+            <p (click)="viewDATABASE()" [ngClass]="{'border-b-2 border-gray-600': database}">DATABASE</p>
+            <p (click)="viewFRAMEWORKS()" [ngClass]="{'border-b-2 border-gray-600': freameWorks}">FRAMEWORKS</p>
         </div>
     </div>
     @if(languages){

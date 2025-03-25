@@ -1,9 +1,10 @@
+import { NgClass } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-technologies-platform',
   standalone: true,
-  imports: [],
+  imports: [NgClass],
   templateUrl: './technologies-platform.component.html',
   styleUrl: './technologies-platform.component.scss'
 })

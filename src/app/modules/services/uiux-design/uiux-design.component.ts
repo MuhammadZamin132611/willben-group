@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { ServicesTopPartComponent } from '../subComponent/services-top-part/services-top-part.component';
 import { SingleCardServiceComponent } from '../subComponent/single-card-service/single-card-service.component';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-uiux-design',
   standalone: true,
-  imports: [ServicesTopPartComponent, SingleCardServiceComponent, CommonModule],
+  imports: [ServicesTopPartComponent, SingleCardServiceComponent, CommonModule, NgClass],
   templateUrl: './uiux-design.component.html',
   styleUrl: './uiux-design.component.scss'
 })
