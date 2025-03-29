@@ -1,7 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { MaterialModule } from '../../../shared/material.module';
 import { Camera, CameraResultType, CameraSource } from '@capacitor/camera';
 import { NgIf } from '@angular/common';
+import { MatDialogComponent } from '../../../shared/mat-dialog/mat-dialog.component';
+import { MatDialog } from '@angular/material/dialog';
+import { SelectImageService } from '../../../service/select-image.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -12,38 +15,31 @@ import { NgIf } from '@angular/common';
 })
 export class PortfolioComponent {
 
-  selectedImage: string | ArrayBuffer | null = null;
 
-  onFileSelected(event: Event) {
-    const input = event.target as HTMLInputElement;
-    if (input.files && input.files.length > 0) {
-      const file = input.files[0];
-      // Validate image type
-      if (!file.type.startsWith('image/')) {
-        console.error('Selected file is not an image');
-        return;
-      }
-      // Create a temporary URL for the selected image
-      const reader = new FileReader();
-      reader.onload = () => {
-        this.selectedImage = reader.result; // Update image source
-        console.log('Selected image:', this.selectedImage, reader);
-      };
-      reader.readAsDataURL(file);
-    }
+  readonly dialog = inject(MatDialog);
+
+  openDialog() {
+    const dialogRef = this.dialog.open(MatDialogComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
 
+  selectedImage: string | ArrayBuffer | null = null;
   capturedImage: string | undefined;
 
-  async openCamera() {
-    const image = await Camera.getPhoto({
-      quality: 90,
-      allowEditing: false,
-      resultType: CameraResultType.DataUrl,
-      source: CameraSource.Camera, // Opens phone camera
-    });
+  constructor(private imageService: SelectImageService) {
+    this.imageService.selectedImage$.subscribe(image => this.selectedImage = image);
+    this.imageService.capturedImage$.subscribe(image => this.capturedImage = image);
+  }
 
-    this.capturedImage = image.dataUrl;
+  onFileSelected(event: Event) {
+    this.imageService.onFileSelected(event);
+  }
+
+  openCamera() {
+    this.imageService.openCamera();
   }
 
 }

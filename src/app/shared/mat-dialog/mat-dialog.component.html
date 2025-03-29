@@ -1,0 +1,36 @@
+<h2 mat-dialog-title>Install Angular</h2>
+<mat-dialog-content class="mat-typography">
+    <div class="flex gap-5">
+        <div>
+
+            <input type="file" #fileInput accept="image/*" (change)="onFileSelected($event)">
+            <div (click)="fileInput.click()"
+                class="grid justify-center place-items-center cursor-pointer hover:bg-gray-100 p-4 rounded">
+                <mat-icon class="!phone-icon !md:large-icon">folder</mat-icon>
+                <p class="text-center">
+                    Choose an image
+                </p>
+            </div>
+        </div>
+        <button (click)="openCamera()">
+            <div class="grid place-content-center place-items-center cursor-pointer hover:bg-gray-100 p-4 rounded">
+                <mat-icon class="!phone-icon !sm:large-icon">photo_camera</mat-icon>
+                <p class="text-center">
+                    Click an image
+                </p>
+            </div>
+        </button>
+    </div>
+
+
+    <!-- Display selected image -->
+    <!-- <img *ngIf="selectedImage" [src]="selectedImage" alt="Selected Image" width="200"> -->
+
+    <!-- Display captured image -->
+    <!-- <img *ngIf="capturedImage" [src]="capturedImage" alt="Captured Image" width="200"> -->
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Selected</button>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Cancel</button>
+</mat-dialog-actions>

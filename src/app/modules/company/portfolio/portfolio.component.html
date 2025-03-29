@@ -28,7 +28,7 @@
                     <div class="grid h-40 justify-center place-items-center text-5xl font-bold">M</div>
                     }
                     @else{
-                    <img class="rounded-full h-full w-full" [src]="selectedImage" alt="Selected Image">
+                    <img class="rounded-full h-full w-full" [src]="selectedImage || capturedImage" alt="Selected Image">
                     }
                     <!-- Upload Button -->
                     <div class="absolute bottom-[1px] right-0">
@@ -44,6 +44,8 @@
         </div>
     </div>
 </section>
+<button mat-button (click)="openDialog()">Open dialog</button>
 
-<!-- <button (click)="openCamera()">Open Camera</button>
-<img *ngIf="capturedImage" [src]="capturedImage" alt="Captured Image" /> -->
+
+<button (click)="openCamera()">Open Camera</button>
+<img *ngIf="capturedImage" [src]="capturedImage" alt="Captured Image" />
